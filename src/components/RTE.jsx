@@ -13,7 +13,8 @@ export default function RTE({name, control, label, defaultValue = ''}) {
             control={control}
             render={({field: {onChange}}) => (
                 <Editor
-                licenseKey='gpl'
+                // licenseKey='gpl'
+                apiKey={config.tinyMceKey}
                 initialValue={defaultValue}
                 init={{
                     
